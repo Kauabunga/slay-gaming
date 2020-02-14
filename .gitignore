@@ -1,0 +1,13 @@
+functions/node_modules/
+node_modules/
+.DS_Store
+.next
+dist/
+
+# Firebase cache
+.firebase/
+firebase-debug.log
+
+
+.vscode/
+

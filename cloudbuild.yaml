@@ -1,0 +1,30 @@
+steps:
+  - name: 'node:12-alpine'
+    id: install
+    entrypoint: 'npm'
+    args: ['install']
+
+  - name: 'node:12-alpine'
+    id: lint
+    entrypoint: 'npm'
+    args: ['run', 'lint']
+
+  - name: 'node:12-alpine'
+    id: test
+    entrypoint: 'npm'
+    args: ['test']
+
+  - name: 'node:12-alpine'
+    id: build
+    entrypoint: 'npm'
+    args: ['run', 'build']
+
+  - name: 'node:12-alpine'
+    id: export
+    entrypoint: 'npm'
+    args: ['run', 'export']
+
+  - name: 'node:12-alpine'
+    id: deploy
+    entrypoint: 'npm'
+    args: ['run', 'deploy']
